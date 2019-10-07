@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <style>
+                  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+div.absolute {
+
+  width: 100%;
+  bottom: 10px;
+  
+} 
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {                                                                                                                                                   
+  content: "";
+  clear: both;
+  display: table;
+}
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+                html {
+                  box-sizing: border-box;
+                }
+                
+                *, *:before, *:after {
+                  box-sizing: inherit;
+                }
+                
+                .column {
+                  float: left;
+                  width: 33.3%;
+                  margin-bottom: 18 px;
+                  padding: 0 30px;
+                }
+                
+                @media screen and (max-width: 650px) {
+                  .column {
+                    width: 500%;
+                    display: block;
+                  }
+                }
+                
+                .cartoond {
+                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                  image-orientation: 0deg;
+                }
+                
+                .container {
+                  padding: 0 16px;
+                }
+                
+                .container::after, .row::after {
+                  content: "";
+                  clear: both;
+                  display: table;
+                }
+                
+                .title {
+                  color: grey;
+                }
+                .footer {
+                  position: fixed;
+                  left: 0;
+                  bottom: 0;
+                  width: 100%;
+                  background-color: lightslategrey;
+                  color: white;
+                  text-align: center;
+                }
+                </style>
+                </head>
+
+<body>
+
+
+
+    <div style="height: 100px;">
+        <div style="float: left;"><div style="float: left;"><img src="carlogo.jpg" height="80px" width="180px"></div><div style="float:right;"><h1>CAR BRAND PORTAL</h1></div></div><br><br><br><br><br>
+        <div class="absolute">
+       <ul>
+         <li><a class="active" href="carbrand.html">HOME</a></li>
+         <li><a href="carmodel.html">MODEL</a></li>
+         <li><a href="news.html">LATEST NEWS</a></li>
+         <li><a href="cdealer.html">DEALERSHIP LOCATOR</a></li>
+         <li><a href="complaint.html">COMPLAINTS</a></li>
+       </ul>
+       </div></div>
+
+<div><br><br>
+       <center> <h2 style="color: crimson">CAR MODELS</h2></center>
+      
+        <br>
+        
+        <div class="row">
+          <div class="column">
+            <div class="cartoond">
+                <center><h2>KIA SELTOS</h2></center>
+              <img src="car1.jpg" alt="TEAM" style="width:100%">
+              <div class="container">    
+        
+                  <p>Rs. 9.69 lakh Onwards</p>
+                  <p>1497 cc</P>
+                  <P> 16.8 kmpl</P>
+                  <P> Petrol/Diesel </P>
+                  <P> Automatic</p>       
+                
+               
+              </div>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="cartoond">
+                <center><h2>MG HECTOR</h2>
+              <img src="car2.jpg" alt="TEAM" style="width:100%"></center>
+              <div class="container">
+                <center>
+                    <p>Rs. 12.18 lakh Onwards</p>
+                    <p>1451 cc</P>
+                    <P>14.16 kmpl</P>
+                    <P>Petrol/Diesel</P>
+                    <P>Automatic</p>       
+                
+                 </center>
+                
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="cartoond">
+                <center><h2>HYUNDAI ELITE i20</h2>
+              <img src="car3.jpg" alt="TEAM" style="width:100%"></center>
+              <div class="container">
+                <center>
+                
+                    <p>Rs. 5.53 lakh Onwards</p>
+                    <p>1197 cc</P>
+                    <P>17.4 kmpl</P>
+                    <P>Diesel/Petrol</P>
+                    <P>Automatic</p></center>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+        <div class="column">
+                <div class="cartoond">
+                    <center><h2>Toyota Innova Crysta</h2>
+                  <img src="car4.jpg" alt="TEAM" style="width:100%"></center>
+                  <div class="container">
+                    <center>
+                        <p>Rs. 14.93 lakh Onwards</p>
+                        <p>2694 cc</P>
+                        <P>10.75 kmpl</P>
+                        <P>Petrol/Diesel</P>
+                        <P>Automatic</p></center>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+            <div class="column">
+                    <div class="cartoond">
+                        <center><h2>Tata Harrier</h2>
+                      <img src="car5.jpg" alt="TEAM" style="width:100%"></center>
+                      <div class="container">
+                        <center>
+                            <p>Rs. 13.00 lakh Onwards</p>
+                            <p>1956 cc </P>
+                            <P>17 kmpl</P>
+                            <P>Diesel</P>
+                            <P>Automatic</p>    
+
+                        </center>
+                            
+                       
+                      </div>
+                    </div>
+                  </div>
+              
+
+
+                <div class="column">
+                        <div class="cartoond">
+                            <center><h2>Jeep Compass Trailhawk
+                           </h2>
+                          <img src="car6.jpg" alt="TEAM" style="width:100%"></center>
+                          <div class="container">
+                          
+                                <center>
+                                    <p>Rs. 26.80 lakh Onwards</p>
+                                    <p>1956 cc</P>
+                                    <P>16.3 kmpl</P>
+                                    <P>Diesel</P>
+                                    <P>Automatic</p>    </center>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <DIV class="row">
+                    <div class="column">
+                            <div class="cartoond">
+                                <center><h2>Ford Endeavour
+                                    </h2>
+                                   
+                              <img src="car7.jpg" alt="TEAM" style="width:100%"></center>
+                              <div class="container">
+                               <center>
+                                <p>Rs. 28.20 lakh Onwards</p>
+                                <p>2198 cc</P>
+                                <P>12.62 kmpl</P>
+                                <P>Diesel</P>
+                                <P>Automatic</p></center>
+                                  
+                               
+                              </div>
+                            </div>
+                          </div>
+                        
+
+                        <div class="column">
+                                <div class="cartoond">
+                                    <center><h2>Renault Triber
+                                       </h2>
+                                  <img src="car8.jpg" alt="TEAM" style="width:100%"></center>
+                                  <div class="container">
+                                      <center>
+                                        <p> Rs. 4.95 lakh Onwards</p>
+                                        <p>999 cc</P>
+                                        <P>20 kmpl</P>
+                                        <P>Petrol</P>
+                                        <P>Automatic</p>    
+                                      </center>
+                                   
+                                  </div>
+                                </div>
+                              </div>
+                            
+
+                            <div class="column">
+                                    <div class="cartoond">
+                                        <center><h2>Fiat Abarth Avventura
+                                           </h2>
+                                      <img src="car9.jpg" alt="TEAM" style="width:100%"></center>
+                                      <div class="container">
+                                        
+                                            <center>
+                                                <p> Rs. 9.99 lakh Onwards</p>
+                                                <p>1368 cc </P>
+                                                <P>17.1 kmpl</P>
+                                                <P>Petrol</P>
+                                                <P>Automatic</p>    
+                                            </center>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+
+                                <div class="row">
+                                <div class="column">
+                                        <div class="cartoond">
+                                            <center><h2>Ferrari Portofino
+                                               </h2>
+                                          <img src="car10.jpg" alt="TEAM" style="width:100%"></center>
+                                          <div class="container">
+                                          <center>
+                                          <p> Rs. 3.50 crore Onwards</p>
+                                          <p>3855 cc 9</P>
+                                          <P>kmpl</P>
+                                          <P>Petrol </P>
+                                          <P>Automatic</p>    
+                                          </center>    
+                                        
+                                          </div>
+                                        </div>
+                                      </div>
+                                    
+
+                                    <div class="column">
+                                            <div class="cartoond">
+                                                <center><h2>Premier Rio
+                                                </h2>
+                                              <img src="car11.jpg" alt="TEAM" style="width:100%"></center>
+                                              <div class="container">
+                                                   <center>
+                                                    <p>Rs. 5.00 lakh Onwards</p>
+                                                    <p>1489 cc</P>
+                                                    <P>16 kmpl</P>
+                                                    <P>Diesel/Petrol</P>
+                                                    <P>Automatic</p></center> 
+                                              </div>
+                                            </div>
+                                          </div>
+                                        
+
+                                        <div class="column">
+                                                <div class="cartoond">
+                                                    <center><h2>Lamborghini Aventador
+                                                       </h2>
+                                                  <img src="car12.jpg" alt="TEAM" style="width:100%"></center>
+                                                  <div class="container">
+                                                      <center>
+                                                        <p>Rs. 5.01 crore Onwards</p>
+                                                        <p>6498 cc</P>
+                                                        <P>7.69 kmpl</P>
+                                                        <P>Petrol</P>
+                                                        <P>Automatic</P>
+                                                      </center>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            </div>
+                                            <div class="footer">
+                                              <p>This is an incomplete list of every brand (also known as make or marque) of car ever produced. Some are from manufacturing companies that also use their company name as a brand name, others are from subsidiary companies or divisions, or are products of badge engineering.</p>
+                                            </div>
+</body>
+</html>

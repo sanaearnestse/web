@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+div.absolute {
+  width: 100%;
+  bottom: 10px;
+  
+} 
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+
+  #para
+{
+	background:#0FF;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:14px;
+	font-style:italic;
+	
+} 
+.word
+{
+	text-align:left;
+	font-size:40px;
+	font-weight:200;
+	color:#00F;
+	background-color: darkslateblue;
+}
+
+#para
+{
+	background:#0FF;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:14px;
+	font-style:italic;
+	
+} 
+.grid-container {
+	display: grid;
+	grid-column-gap: 50px;
+  }
+  #customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: lightslategrey;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body><div style="height: 100px;">
+  <div style="float: left;"><div style="float: left;"><img src="carlogo.jpg" height="80px" width="180px"></div><div style="float:right;"><h1>CAR BRAND PORTAL</h1></div></div><br><br><br><br><br>
+<div class="absolute">
+<ul>
+  <li><a class="active" href="carhome.html">HOME</a></li>
+  <li><a href="carmodel.html">MODEL</a></li>
+  <li><a href="#gallery">LATEST NEWS</a></li>
+  <li><a href="cdealer.html">DEALERSHIP LOCATOR</a></li>
+  <li><a href="complaint.html">COMPLAINTS</a></li>
+</ul>
+</div></div> <br><br><br>
+<form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+    <p>
+    <label>Name
+    <input type="text" name="customer_name" required>
+    </label> 
+    </p>
+    
+    <p>
+    <label>Phone 
+    <input type="tel" name="phone_number">
+    </label>
+    </p>
+    
+    <p>
+    <label>Email 
+    <input type="email" name="email_address">
+    </label>
+    </p>
+    
+    <fieldset>
+    <legend>Model of the car</legend>
+    <p><label> <input type="radio" name="taxi" required value="car">Kia Seltos </label></p>
+    <p><label> <input type="radio" name="taxi" required value="van">MG hector</label></p>
+    <p><label> <input type="radio" name="taxi" required value="tuktuk">Tata Harrier </label></p>
+    </fieldset>
+    
+    <fieldset>
+    <legend>Type of Complaint</legend>
+    <p><label> <input type="checkbox" name="extras" value="baby">Fuel Complaint</label></p>
+    <p><label> <input type="checkbox" name="extras" value="wheelchair">Break issues </label></p>
+    <p><label> <input type="checkbox" name="extras" value="tip"> Others </label></p>
+    </fieldset>
+    
+    </p>
+    
+    <p><button>Register Complaint</button></p><br><br><br>
+    
+    </form>
+    <div class="footer">
+        <p>This is an incomplete list of every brand (also known as make or marque) of car ever produced. Some are from manufacturing companies that also use their company name as a brand name, others are from subsidiary companies or divisions, or are products of badge engineering.</p>
+      </div>
+    </body>
+    </html>
