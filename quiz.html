@@ -1,0 +1,249 @@
+<html>
+<head>
+<title>
+sample quiz application
+</title>
+<script language=JavaScript>
+var i=1, num_Of_Question=10;
+questions = new Array() 
+questions[1]="The Nimoo Bazgo Power Project (NBPP) is located in which state? ";
+questions[2] =" World Suicide Prevention Day 2019 is observed on __________?";
+questions[3] =" Who is the Current CM Of Kerala?";
+questions[4] ="Total Number of Lok sabha seats in Kerala?";
+questions[5] =" what is literacy Rate of Kerala?";
+questions[6] ="What is Kerala Population Rank in India?";
+questions[7] ="Who is the father of computer?";
+questions[8]="Who was the first actor to get Oscar Award?    ";
+questions[9]=" Who among the following is not a recipient of Bharat Ratna?  ";
+questions[10]="Which of the following is India’s highest honour in the field of literature?  ";
+
+answerA=new Array()
+answerA[1]="Himachal Pradesh";
+answerA[2]="8th September";
+answerA[3]="V. S. Achuthanandan";
+answerA[4]="19";
+answerA[5]="95.9%";
+answerA[6]="20";
+answerA[7]="Alan Turing";
+answerA[8]=" Montgomery";
+answerA[9]=" Vinobha Bhave";
+answerA[10]="Vyas Samman";
+
+answerB=new Array()
+answerB[1]="Jammu & Kashmir";
+answerB[2]=" 9th September";
+answerB[3]="Oommen Chandy";
+answerB[4]="18";
+answerB[5]=" 96.9%";
+answerB[6]="13";
+answerB[7]="Dennis Richie";
+answerB[8]=" Fairbanks";
+answerB[9]=" Sardar Vallbhabhai Patel";
+answerB[10]="Kalidas Samman";
+
+answerC=new Array()
+answerC[1]="Punjab";
+answerC[2]="10th September";
+answerC[3]="Pinarayi Vijayan";
+answerC[4]="20";
+answerC[5]=" 99.9%";
+answerC[6]="7";
+answerC[7]="Edfrank";
+answerC[8]="Janet Gayner";
+answerC[9]="Lal Bahadur Shastri";
+answerC[10]="Jnanpith Award"
+
+answerD=new Array()
+answerD[1]="Uttar Pradesh";
+answerD[2]="11th September";
+answerD[3]="A. K. Antony";
+answerD[4]="None of These";
+answerD[5]="93.9%";
+answerD[6]="8";
+answerD[7]="Charles Babage";
+answerD[8]="Charlie Chaplin";
+answerD[9]="Dr.S. Radhakrishnan";
+answerD[10]="Saraswathi Samman";
+
+
+rightAnswer=new Array()
+rightAnswer[1]=2;
+rightAnswer[2]=3;
+rightAnswer[3]=3;
+rightAnswer[4]=3;
+rightAnswer[5]=4;
+rightAnswer[6]=2;
+rightAnswer[7]=4;
+rightAnswer[8]=3;
+rightAnswer[9]=2;
+rightAnswer[10]=3;
+
+var score=0;
+function preQuestion()
+{
+var radios = document.getElementsByName("quiz");
+var option;
+
+    for (var j = 0; j < radios.length; j++) {       
+        if (radios[j].checked) {
+           option=radios[j].value;
+        radios[j].checked=false;
+            break;
+        }
+    }
+
+    if(option==rightAnswer[i])
+    {
+        score=score+1;
+        
+    }
+    
+    i--;    
+    if(i==0)
+    {
+    alert("This is first Question");
+    i++;
+    }
+    
+    var x=document.getElementById('myTable').rows
+        var y=x[0].cells
+        y[0].innerHTML=i + ".\t";
+    y[1].innerHTML=questions[i];
+    getOptionA();
+}
+function nextQuestion()
+{
+
+var radios = document.getElementsByName("quiz");
+var option;
+
+    for (var j = 0; j < radios.length; j++) {       
+        if (radios[j].checked) {
+            option=radios[j].value;
+        radios[j].checked=false;
+                break;
+        }
+    }
+
+    if(option==rightAnswer[i])
+    {
+        score=score+1;
+        
+    }
+    i++;
+    if(i>num_Of_Question)
+    {
+    alert("This is last Question");
+    i--;
+    }   
+    var x=document.getElementById('myTable').rows
+        var y=x[0].cells
+        y[0].innerHTML=i + ".\t";
+    y[1].innerHTML=questions[i];
+    getOptionA();
+}
+function getOptionA()
+{
+var x=document.getElementById('myTable').rows
+        var y=x[1].cells
+        y[1].innerHTML=answerA[i];
+getOptionB();
+}
+function getOptionB()
+{
+var x=document.getElementById('myTable').rows
+        var y=x[2].cells
+        y[1].innerHTML=answerB[i];
+getOptionC();
+}
+function getOptionC()
+{
+var x=document.getElementById('myTable').rows
+        var y=x[3].cells
+        y[1].innerHTML=answerC[i];
+        getOptionD();
+}
+function getOptionD()
+{
+var x=document.getElementById('myTable').rows
+        var y=x[4].cells
+        y[1].innerHTML=answerD[i];
+
+}
+
+function showScore() //score is updated only after clicking next or previous button not by clicking the answer and checking in order to know whether your answer is correct or not.
+{
+var radios = document.getElementsByName("quiz");
+
+
+for (var j = 0; j < radios.length; j++) {       
+        
+           
+        radios[j].checked=false;
+        
+    }
+ alert("Your score is "+ score);
+}
+</script>
+</head>
+<body >
+<form name=first method=post style="width:500px; height:300px; color:blue">
+<fieldset>
+<legend align=center> QUIZ</legend>
+<table id=myTable style=" color:blueviolet">
+<tr>
+<td ><script language=JavaScript>
+//var i=1;
+document.write(i + ".\t");
+</script>
+</td>
+<td>
+<script language=JavaScript>
+document.write(questions[i]);
+</script>
+
+</td>
+</tr>
+<tr><td>
+<input type = "radio" value="1" name = "quiz"></td>
+<td>
+<script language=JavaScript>
+document.write(answerA[i]);
+</script></td></tr>
+<tr><td>
+<input type = "radio" value ="2" name = "quiz">
+</td><td>
+<script language=JavaScript>
+document.write(answerB[i]);
+</script></td></tr>
+<tr>
+<td>
+<input type = "radio" value ="3" name = "quiz"></td>
+<td>
+<script language=JavaScript>
+document.write(answerC[i]);
+</script></td></tr>
+<tr>
+    <td>
+    <input type = "radio" value ="4" name = "quiz"></td>
+    <td>
+    <script language=JavaScript>
+    document.write(answerD[i]);
+    </script></td></tr>
+<tr>
+</tr>
+</table>
+<a href=javascript:preQuestion();><img src=back.JPG style="position:absolute; left:100px" width=50 height=50></a>
+<a href=javascript:showScore();><img src=score.jpg  style="position:relative;left:150px" width=50 height=50>                                  
+<a href=javascript:nextQuestion();><img src=next.JPG  style="position:relative; left:200px" width=50 height=50>
+</a> <br><br>     
+<input type=button value=Quit onclick=quit()>                                
+
+</fieldset>
+</form>
+</body>
+</html>
+
+
+
+
